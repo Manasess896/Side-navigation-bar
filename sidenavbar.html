@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Set character encoding -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251">
+  <!-- Set viewport for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS styles */
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+        /* Side navigation */
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        /* Links in the side navigation */
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 11vw; /* Responsive font size */
+        color:white;
+        display: block;
+        transition: 0.3s;
+        margin-top: 14vw; /* Vertical margin */
+    }
+
+    .sidenav a:hover, .offcanvas a:focus {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        /* Close button for side navigation */
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 14vw; /* Responsive font size */
+        margin-left: 50px;
+        color:red;
+        margin-top: -10px;
+        font-size: 25vw; /* Responsive font size */
+    }
+
+    @media screen and (max-height: 450px){
+        /* Responsive adjustments for smaller screens */
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Side navigation menu -->
+<div id="mySidenav" class="sidenav">
+  <!-- Close button -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><br>
+  <!-- Navigation links -->
+  <a href="#">About</a><hr>
+  <a href="#">Services</a><hr>
+  <a href="#">Career</a><hr>
+  <a href="#">Contact</a><hr>
+</div>
+
+<!-- Open side navigation button -->
+
+<span style="font-size:14vw;" onclick="openNav()">&#9776;</span>
+
+<!-- Content -->
+<!--random text-->
+<h1>Sidenav Example</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, optio consequuntur. Veritatis fugit temporibus adipisci tempore officia beatae aperiam magni corrupti maiores. Possimus voluptatibus, voluptatum sapiente eum. Odio, tenetur, sapiente.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fugit, explicabo sequi laborum! Pariatur autem repudiandae fugiat dignissimos voluptatum accusantium consequatur iusto, quae rerum distinctio sapiente magni officia saepe, animi.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eligendi officiis recusandae, sapiente soluta dolores laudantium, voluptatum earum voluptate ut, voluptatibus ipsa inventore officia ex. Officia eveniet corporis ullam aperiam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, neque praesentium nemo dolorum eligendi a perferendis quidem repellat, iusto deserunt, facere, nesciunt officiis itaque rerum unde ratione incidunt! Sequi, accusamus.</p>
+
+<script>
+  // JavaScript functions to open and close the side navigation
+  //open button
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "70%";//it opens 70% of the screen
+  }
+//close function
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";//this closes the side nav its width is set to 0 so that nothing is displayed
+  }
+  //end of javascript 
+</script>
+
+</body>
+</html>
